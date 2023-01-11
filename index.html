@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Hélio Dev.</title>
+
+    <link rel="icon" href="./imgs/rede.png"/>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./media.css">
+</head>
+
+<body>
+    <main>
+        <div class="left">
+            <img src="./imgs/profile-picture.jpeg" alt="Me" />
+        </div>
+
+        <div class="right">
+            <div class="title">
+              <h1>Hélio Lúcio</h1>
+              <button title="Mudar Tema" type="button" class="theme">
+                <i class="fa-solid fa-circle-half-stroke"></i>
+              </button>
+            </div>
+            <div class="divider"></div>
+            <div class="faculdade">
+                <img src="./imgs/logo-cruzeiro-do-sul-estrela-1024.png" alt="Cruzeiro do Sul" />
+                <h2>Universidade Cruzeiro do Sul - Ciências da Computação</h2>
+            </div>
+            <p>
+                Estudante e apaixonado por programação, estou todo dia aprendendo algo novo e pondo em práticas meus
+                conhecimentos em projetos pessoais, com o objetivo de alcançar minha primeira oportunidade profissional
+                no desenvolvimento web.
+            </p>
+            <div class="skills">
+                <h2>Tecnologias</h2>
+                <div class="divider"></div>
+                <div class="icons">
+                    <i title="HTML5" class="fa-brands fa-html5 html"></i>
+                    <i class="fa-brands fa-css3-alt css"></i>
+                    <i class="fa-brands fa-square-js js"></i>
+                    <i class="fa-brands fa-node-js node"></i>
+                    <i class="fa-brands fa-sass sass"></i>
+                    <i class="fa-brands fa-git git"></i>
+                </div>
+            </div>
+
+            <a href="./helio-cv.pdf" target="_blank" type="application/pdf" class="curriculo">Visualizar Currículo (PDF)</a>
+
+            <button type="button" class="down desktop">
+                <i class="fa-solid fa-arrow-down"></i>Ver Portfólio
+            </button>
+            <button title="Ver Portfólio" type="button" class="down mobile">
+                <i class="fa-solid fa-arrow-down"></i>
+            </button>
+        </div>
+    </main>
+
+    <div class="portfolio">
+        <h1>Portfólio</h1>
+        <div class="divider"></div>
+
+        <div class="filter-container">
+            <button>CSS</button>
+            <button>Javascript</button>
+            <button>React.Js</button>
+        </div>
+
+        <div class="portfolio-container"></div>
+    </div>
+
+    <div class="up-container">
+        <button type="button" class="up"><i class="fa-solid fa-arrow-up"></i>Voltar</button>
+    </div>
+
+    <footer>
+        <div class="left">
+            <div class="numero">
+                <i class="fa-brands fa-whatsapp"></i>
+                <a target="_blank" href="https://api.whatsapp.com/send?phone=5591984459458">(91) 98445-9458</a>
+            </div>
+            <div class="email">
+                <i class="fa-sharp fa-solid fa-envelope"></i>
+                <a target="_blank" href="mailto:helio.lucio.jr54@gmail.com">helio.lucio.jr54@gmail.com</a>
+                
+            </div>
+        </div>
+        <div class="right">
+            <div class="linkedin">
+                <i class="fa-brands fa-linkedin"></i>
+                <a target="_blank" href="https://www.linkedin.com/in/heliolj/">Hélio L. J.</a>
+            </div>
+            <div class="github">
+                <i class="fa-brands fa-github"></i>
+                <a target="_blank" href="https://github.com/helioLJ">helioLJ</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./app.js"></script>
+    <script src="https://kit.fontawesome.com/73ca816a64.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

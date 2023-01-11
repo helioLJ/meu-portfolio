@@ -1,0 +1,362 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --white: #F2F2F2;
+  --white-2: #BFBFBF;
+  --gray: #737373;
+  --gray-2: #404040;
+  --black: #0D0D0D;
+}
+
+.light-mode {
+  --white: #0D0D0D;
+  --white-2: #404040;
+  --gray: #737373;
+  --gray-2: #BFBFBF;
+  --black: #F2F2F2;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--white);
+  transition: all 0.2s ease-in-out;
+}
+
+main {
+  display: flex;
+  padding: 2rem;
+  height: 100vh;
+}
+main .left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+main .left img {
+  max-width: 80%;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  filter: grayscale(100);
+  transition: filter 0.3s ease-in-out;
+}
+main .left img:hover {
+  filter: grayscale(0);
+}
+main .right {
+  flex: 1;
+  padding: 5rem 2rem;
+  position: relative;
+}
+main .right .title {
+  display: flex;
+  align-items: center;
+}
+main .right .title h1 {
+  color: var(--black);
+  font-size: 4rem;
+  display: inline;
+}
+main .right .title .theme {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--black);
+  border-radius: 100%;
+  color: var(--white);
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+  margin-left: 20px;
+}
+main .right .title .theme:hover {
+  color: var(--black);
+  background-color: var(--white);
+}
+main .right .title .theme i {
+  font-size: 1.5rem;
+}
+main .right .divider {
+  background-color: var(--black);
+  height: 5px;
+  width: 40%;
+  margin-top: -10px;
+}
+main .right .faculdade {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+}
+main .right .faculdade img {
+  height: 25px;
+  width: 25px;
+  margin-right: 10px;
+  transition: all 0.2s ease-in-out;
+}
+main .right .faculdade img:hover {
+  filter: grayscale(100);
+}
+main .right .faculdade h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--gray-2);
+}
+main .right .faculdade small {
+  margin-left: 10px;
+  color: red;
+}
+main .right p {
+  margin-bottom: 3rem;
+  color: var(--gray);
+}
+main .right .skills {
+  margin-bottom: 4rem;
+}
+main .right .skills h2 {
+  color: var(--gray-2);
+}
+main .right .skills .divider {
+  background-color: var(--black);
+  height: 3px;
+  width: 20%;
+  margin-top: 3px;
+}
+main .right .skills .icons {
+  margin-top: 2rem;
+}
+main .right .skills .icons i {
+  font-size: 2rem;
+  margin: 0 0.2rem;
+  transition: all 0.2s ease-in-out;
+}
+main .right .skills .icons i:hover {
+  color: var(--black);
+}
+main .right .skills .icons .html {
+  color: rgb(255, 145, 0);
+}
+main .right .skills .icons .css {
+  color: rgb(0, 110, 255);
+}
+main .right .skills .icons .js {
+  color: rgb(255, 196, 0);
+}
+main .right .skills .icons .sass {
+  color: rgba(255, 0, 179, 0.61);
+}
+main .right .skills .icons .git {
+  color: rgb(145, 82, 11);
+}
+main .right .skills .icons .node {
+  color: rgb(70, 201, 10);
+}
+main .right .skills .icons .figma {
+  color: rgb(219, 53, 241);
+}
+main .right .curriculo {
+  background-color: var(--white);
+  border: 2px solid var(--black);
+  color: var(--black);
+  text-decoration: none;
+  cursor: pointer;
+  padding: 1rem 3.7rem;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+main .right .curriculo:hover {
+  color: var(--white);
+  background-color: var(--black);
+}
+main .right .down {
+  border-color: var(--black);
+  position: absolute;
+  bottom: 3%;
+  right: 2%;
+  background-color: var(--black);
+  border-radius: 25px;
+  color: var(--white);
+  cursor: pointer;
+  padding: 0.7rem 1rem;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+main .right .down:hover {
+  color: var(--black);
+  background-color: var(--white);
+}
+main .right .down i {
+  margin-right: 10px;
+}
+
+.portfolio {
+  min-height: 100vh;
+  padding: 2rem;
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.portfolio h1 {
+  color: var(--black);
+  font-size: 4rem;
+}
+.portfolio .divider {
+  background-color: var(--black);
+  height: 5px;
+  width: 12%;
+  margin-top: 3px;
+}
+.portfolio .filter-container {
+  margin-top: 2rem;
+}
+.portfolio .filter-container .filter-btn {
+  color: var(--black);
+  border-color: var(--black);
+  margin-bottom: 10px !important;
+  background-color: var(--white);
+  border-radius: 25px;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  width: 110px;
+  margin: 0 4px;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+.portfolio .filter-container .filter-btn:hover {
+  color: var(--white);
+  background-color: var(--black);
+}
+.portfolio .filter-container .btn-active {
+  background-color: var(--black) !important;
+  color: var(--white) !important;
+}
+.portfolio .portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin-top: 3rem;
+}
+.portfolio .portfolio-container .portfolio-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  background-color: var(--white);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.portfolio .portfolio-container .portfolio-item .image img {
+  display: block;
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+}
+.portfolio .portfolio-container .portfolio-item .content {
+  width: 100%;
+  height: 100%;
+  background-color: var(--gray-2);
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-105%);
+  transition: all 0.4s ease-in-out;
+  width: 100%;
+  padding: 1rem;
+}
+.portfolio .portfolio-container .portfolio-item .content h3 {
+  color: var(--white);
+}
+.portfolio .portfolio-container .portfolio-item .content .divider {
+  background-color: var(--white);
+  width: 25%;
+  height: 3px;
+  margin-bottom: 2rem;
+}
+.portfolio .portfolio-container .portfolio-item .content p {
+  font-size: 0.8rem;
+  color: var(--white-2);
+}
+.portfolio .portfolio-container .portfolio-item .content .links {
+  margin-top: 2rem;
+}
+.portfolio .portfolio-container .portfolio-item .content .links i {
+  font-size: 1.8rem;
+  margin: 0 5px;
+  color: var(--white);
+  transition: all 0.2s ease-in-out;
+}
+.portfolio .portfolio-container .portfolio-item .content .links i:hover {
+  color: var(--gray);
+}
+
+.up-container {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0;
+}
+.up-container .up {
+  border-color: var(--black);
+  background-color: var(--black);
+  border-radius: 25px;
+  color: var(--white);
+  cursor: pointer;
+  padding: 1rem 4rem;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+.up-container .up:hover {
+  color: var(--black);
+  background-color: var(--white);
+}
+.up-container .up i {
+  margin-right: 10px;
+}
+
+footer {
+  background-color: var(--black);
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+footer a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 600;
+  line-height: 40px;
+}
+footer i {
+  color: var(--white-2);
+  margin-right: 10px;
+  font-size: 1.3rem;
+}
+
+.portfolio-item:hover .content {
+  transform: translateX(0%) !important;
+}
+
+.desktop {
+  display: block;
+}
+
+.mobile {
+  display: none !important;
+}/*# sourceMappingURL=style.css.map */

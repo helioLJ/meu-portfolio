@@ -1,0 +1,84 @@
+@media screen and (max-width: 1180px) {
+  main {
+      .left {
+          padding: 0;
+      }
+      .right {
+          h1 {
+              font-size: 3rem;
+          }
+      }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  main {
+      padding: 1rem;
+      flex-direction: column;
+      .left {
+          img {
+              height: 100%;
+          }
+          height: 30%;
+      }
+      .right {
+          padding: 1rem;
+          padding-top: 2rem;
+          .down {
+              i {
+                  margin-right: 0;
+              }
+          }
+      }
+  }
+  .desktop {
+      display: none !important;
+  }
+  .mobile {
+      display: block !important;
+  }
+  .portfolio-container {
+      grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  main {
+      .right {
+          h1 {
+              font-size: 3rem !important;
+          }
+          .divider {
+              margin-top: 0px;
+          }
+          .faculdade {
+              h2 {
+                  font-size: 0.9rem;
+              }
+          }
+          .down {
+              font-size: .6rem;
+              right: -1%;
+              bottom: 3%;
+          }
+          .curriculo {
+              font-size: .8rem;
+              padding: 1rem 2rem;
+          }
+      }
+  }
+  .portfolio-container {
+      grid-template-columns: repeat(1, 1fr) !important;
+  }
+  footer {
+      flex-direction: column;
+      gap: 0;
+      align-items: flex-start;
+  }
+
+  .title{
+    .theme{
+      margin-left: 5px;
+    }
+  }
+}
